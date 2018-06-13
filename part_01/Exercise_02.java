@@ -7,7 +7,13 @@ package part_01;
  */
 public class Exercise_02 {
 
+
     public static void main(String[] args) {
 
-    }
+        String a = "Hello World!";
+
+        System.out.println(a +"\n" + a +"\n" +"\n" + a +"\n" +"\n" + a +"\n" +a);
+
+
+        }
 }

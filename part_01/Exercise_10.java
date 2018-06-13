@@ -9,5 +9,11 @@ package part_01;
  */
 
 public class Exercise_10 {
+    public static void main(String[] args) {
 
+        double miles = 12/1.6;
+        double av2 = (miles/(30.5))*60;
+
+        System.out.println(" the average mile per hour is " + av2 + "miles per hour");
+    }
 }

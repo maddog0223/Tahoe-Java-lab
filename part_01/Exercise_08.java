@@ -10,4 +10,13 @@ package part_01;
  */
 public class Exercise_08 {
 
+    public static void main(String[] args) {
+
+        double r = 3.14;
+        double a = (3.14 * 3.14 )*Math.PI;
+        double p = (2*3.14)*3.14;
+
+        System.out.println("area of the circle is " + a + "\n perimeter of the circle is " + p);
+    }
+
 }

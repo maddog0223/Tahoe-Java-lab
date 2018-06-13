@@ -9,4 +9,12 @@ package part_01;
  */
 public class Exercise_09 {
 
+    public static void main(String[] args) {
+
+        double a = 2.4*6.4;
+        double p = (2.4*2) + (6.2*2);
+
+        System.out.println("The area of the rectangle is " + a + "\n\n The perimeter of the rectangle is " + p);
+    }
+
 }

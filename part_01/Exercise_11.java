@@ -15,4 +15,12 @@ package part_01;
 
 public class Exercise_11 {
 
+    public static void main(String[] args) {
+
+        int a = ((3153600/6)*3)+380123456;
+        int b = (380123456-((3153600/12)*3));
+        int c = (380123456 + ((3153600/40)*3));
+        int total = a+b+c;
+        System.out.println("the total population after 3 years is " + total);
+    }
 }
