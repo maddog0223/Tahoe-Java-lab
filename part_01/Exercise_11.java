@@ -17,10 +17,11 @@ public class Exercise_11 {
 
     public static void main(String[] args) {
 
-        int a = ((3153600/6)*3)+380123456;
-        int b = (380123456-((3153600/12)*3));
-        int c = (380123456 + ((3153600/40)*3));
-        int total = a+b+c;
+        int a = ((31536000/6)*3);
+        int b = ((31536000/12)*3);
+        int c = ((31536000/40)*3);
+        int e = 380123456;
+        int total = e+(a-b+c);
         System.out.println("the total population after 3 years is " + total);
     }
 }
