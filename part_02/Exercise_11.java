@@ -19,6 +19,28 @@ import java.util.Scanner;
 
 public class Exercise_11 {
 
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the amount of your investment");
+
+        double inv = scanner.nextDouble();
+
+        System.out.println("Now your interest rate in percentage");
+
+        double p = scanner.nextDouble();
+
+        System.out.println("Now the years of investment");
+        int y = scanner.nextInt();
+
+        double total = (inv-(inv*p/100))*y;
+
+        System.out.println(total + " is your total invest in" + y + " years");
+
+
+    }
+
 }
 
 

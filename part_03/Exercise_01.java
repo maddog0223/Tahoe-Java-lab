@@ -12,3 +12,46 @@ package part_03;
   sports teams, trees, beers, people and so on.
 
  **/
+
+public class FruitController{
+    String texture;
+    String color;
+    int sweetnessrate ;
+
+
+    public static void main(String[] args) {
+
+        Fruits fruits = new Fruits();
+        Watermelon w = new Watermelon("rough","reen in red", 7);
+
+
+    }
+
+
+
+
+}
+public class Apples{
+
+
+    Apples(String texture, String color, int sweetnessrate){
+
+       texture = texture;
+        color = color;
+        sweetnessrate = sweetnessrate;
+
+    }
+
+    Fruits(){}
+
+}
+public class Watermelon {
+
+
+    Watermelon ( String texture, String color, int sweetnessrate){
+        (texture, color, sweetnessrate);
+
+    };
+
+
+}
