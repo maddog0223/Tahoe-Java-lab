@@ -15,3 +15,35 @@ import java.util.Scanner;
  Output can be on one line or many lines. However you like.
 
  */
+class InputArrays {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter any 10 integers");
+
+
+        int[] array = new int[10];
+
+        for (int i =0; i < array.length; i ++){
+
+
+            System.out.println("Enter number " + (i+1));
+            array[i]=scanner.nextInt();
+        }
+
+        System.out.println(array[0] + " " + array[1]+ " " + array[2]+ " " + array[3]+ " " + array[4] + " " + array[5]
+                + " " + array[6]+ " " + array[7]+ " " + array[8]+ " " + array[9]);
+
+
+        System.out.println(array[1] + " " + array[3]+ " " + array[5]+ " " + array[7]+ " " + array[9] + " " + array[8]
+                + " " + array[6]+ " " + array[4]+ " " + array[2]+ " " + array[0]);
+
+
+
+
+
+
+    }
+}
