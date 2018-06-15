@@ -4,29 +4,60 @@ Answer the following questions
 
 1) What is an instance variable?
 
+A variable that calls the class itself
 
 2) How do you create a new object?
+
+Classname nameoftheobj = new Clasname;
 
 
 3) After creating a new object, how do you set that objects instance variables?
 
 
-4) What is a reference variable? Why do you need to be careful with reference variables?
+nameoftheobj.instancevar = 10;
 
+4) What is a reference variable? Why do you need to be careful with reference variables?
+classname fgsgfdg = new classname;
+A variable to create an object.
+reference variable shares memory, so unlike primitive types if you change the reference,
+the whole memory of the reference will shift.
 
 5) How many methods can you have in a class?
 
+unlimited amount
 
 6) How do you exit a method at any point?
 
+The curly bracket
+return
+break;
 
 7) What is the method signature required to return an "int" from a method?
+
+a return type
+
+public static int IntExample(int a){}
 
 
 8) Assuming "int num = 10", what is the syntax to return "num" from a method?
 
+public static int Ex(int num){
+
+int num = 10;
+
+return num;
+}
 
 9) How do you pass a parameter to a method?
+psvm {
+int d = para(2,2);
+}
+public static int para(int a,int b){
+
+int c = a+b;
+
+return c;
+}
 
 
 10) What is the method signature for a method named sum() that takes two int parameters and returns their sum as in int?
@@ -34,33 +65,64 @@ Answer the following questions
 
 11) What is a constructor?
 
+helps create object of the class.
+Like a method but with no return type, and the of itsclass is the same as the name of its class.
+
 
 12) How does Java treat a class without a constructor?
+
+it automatically creates a default constructor for its class
 
 
 13) What would the constructor for "public class Animal" look like?
 
+Animal(){}
 
 14) What is the effect of passing parameters to a constructor?
 
+you are required to add the values of the data type in the parameter when creating the object
+
 
 15) When should you pass parameters to a constructor?
+when you want to keep the parameters flexible.
+Overloading Constructor
 
 
 16) What does the finalize() method do?
 
+**A method called before the garbage collector when the object has no more references.
+
 
 17) What does the "this" keyword do?
 
+The instance variable of the class it's in
 
 18) When should you use the "this" keyword?
 
+when the instance variable  and parameter in the method/constructor has the name, and are equaled to each other.
+"this" is used to point out that it is talking about the instance variable
 
 19) Write an example of the "this" keyword in action.
+public class LoveApples{
+
+int apples;
+
+public Apples(int apples){
+this.apples = apples;
+    }
+
+}
+
+20.) Explain the difference between static and non-static variables.
+
+static variables all share the same value in the class
+non-static variables has their own values
 
 
-20.) EXplain the difference between static and non-static variables.
+21.) Explain the difference between static and non-
 
+static method belongs to the class(share the same methods)
 
-21.) Explain the difference between static and non-static methods.
+nonstatic belongs to the object of the class(can have multiple different methods)
+
 

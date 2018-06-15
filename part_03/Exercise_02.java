@@ -9,3 +9,28 @@ package part_03;
 
  */
 
+class A{
+
+
+    public static void main(String[] args) {
+
+        int divide = divide(4,4);
+
+        int add = add(4,4);
+
+        System.out.println("divide " + divide + " add " + add);
+
+
+    }
+
+    public static int divide(int a, int b) {
+
+        return a/b;
+    }
+
+    public static int add(int a, int b){
+
+
+        return a+b;
+    }
+}
