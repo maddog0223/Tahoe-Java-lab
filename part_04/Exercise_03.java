@@ -16,5 +16,23 @@ public class Exercise_03 {
 
     public static void main(String[] strings) {
 
+        int count = 0;
+        int[][] array = new int[5][10];
+
+
+        for (int i = 0 ; i < 5; i ++){
+            for (int j=0; j < 10; j++) {
+
+                array[i][j] = count;
+                count++;
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println("\n");
+        }
+
+
     }
 }
+
+
+

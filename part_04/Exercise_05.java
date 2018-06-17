@@ -14,5 +14,21 @@ public class Exercise_05 {
 
     public static void main(String[] strings) {
 
+
+        int[] array = new int[6];
+        int a = 0;
+
+        for (int i = 0; i < 6; i++) {
+
+            array[i] = a;
+            a++;
+        }
+
+        for (int b:array) {
+
+            System.out.print (b + " ");
+        }
+
     }
+
 }
