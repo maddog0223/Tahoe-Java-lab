@@ -2,39 +2,107 @@ Answer the following questions:
 
 1) What is an array?
 
+A collection of elements of the same type
+
 2) What the code required to create (instantiate) a String array with size 10 named "cats"?
+
+String[] cats = new String[10];
 
 3) What is a multidimensional array?
 
+2d arrays that has a row and a column.
+
 4) What is the code required to create (instantiate) a 2-dimensional int array that is 6 high and 6 wide named "scores"?
+
+int[][] scores= new int[6][6];
 
 5) Using code, how do you retrieve a String that is the 10th item in a traditional array named dogs?
 
+String dogs[11] = 10;
+
 6) What is an ArrayIndexOutOfBoundsException?
+
+When the index of the array is not determined(does not exist)
 
 7) Using one line of code, demonstrate how to retrieve the second to the last item from a int array.
 
+array[i-1];
+
 8) What is the maximum allowable size of an array in Java?
+
+unlimited
 
 9) What is a bubble sort?
 
+A way to sort numbers
+
 10) How does a bubble sort work?
+
+For an example, if you have a length of 5 list of arrays, then the indexes that are next to each other will
+switch depending on how you want the rows to be set up.
+
+This will be going on a loop at least -1 of the total length.
+
+1,5,3,4
+
+if you want the rows to go from the lowest to the highest (1,3,4,5), and of you are starting from the left, the indexes of the value 3 and
+4 will be first compared. 4 is bigger than 3 so no changes will be made. Next 3 and 5 will be checked. 5 is greater than 3 so they
+will be switch. Now it would be 3 and 1 that will be compared, because prviously 3 and 5 were switch.
+1 is less then 3 so it not be switched. That was one loop. this will AT least be passed over 3 times.
+
 
 11) When might you use an irregular array? What is a good example of an irregular array?
 
+When not all columns are the same length in multi dimensional arrays.
+
+Ex:
+int [][] irregular= {{1,2,3},{3,4,5,6,7},{4,4}};
+
 12) Demonstrate how to iterate through an array, printing each value, using a for loop.
+
+int[] array = new int[4];
+
+int i;
+for(i=0;i < array.length; i++){
+
+array[i] =+ i;
+
+System.out.print(array[i]);
+}
 
 13) Demonstrate how to iterate through an array, printing each value, using a while loop.
 
+int[] unicorn = {1,3,5};
+int i =0;
+while (i<unicorn.length){
+i++;
+}
+System.out.print(unicorn[i]);
+
 14) What is a queue?
+
+First in first out stack
+
+arrays
 
 15) What are the two primary operations that a queue performs?
 
 16) What is a stack?
 
+First in Last out
+
 17) What differentiates stacks and queues?
 
+stack is first in last out
+queues are first in first out
+
 18) When would you use an enhanced for loop?
+
+when you are dealing with collections
+such as arrays
+
+when you deal with collectives (arrays)
+
 
 19) What is "The Collections Framework"? What classes does it include?
 
@@ -42,7 +110,11 @@ Answer the following questions:
 
 21) What is a String?
 
+A sequence of characters
+
 22) What are a few common methods for operating on Strings?
+
+inside the main method
 
 23) What does "Strings are immutable" mean?
 

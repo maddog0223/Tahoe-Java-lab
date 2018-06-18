@@ -7,5 +7,25 @@ package part_05;
  */
 
 
+class MethStr {
+
+    public static void main(String[] args) {
+
+        MethStr obj = new MethStr();
+
+        System.out.println(obj.varargs());
+
+    }
+
+    public String varargs(String... Strings) {
+
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("Hello! ").append(" my ").append(" name ").append(" is ").append(" Madoka ");
+
+        return sb.toString();
 
 
+    }
+
+}

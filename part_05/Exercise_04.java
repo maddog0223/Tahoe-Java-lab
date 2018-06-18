@@ -8,3 +8,58 @@ package part_05;
  * within each instance of Class_02 to modify Class_02's private instance variables.
  *
  */
+
+class A {
+
+    public static void main(String[] args) {
+
+
+        B oneb = new B(4.5);
+        B twob = new B(3.0, 4.0);
+        B threeb = new B();
+
+
+
+    }
+}
+
+
+    class B {
+
+        private double a;
+        private double b;
+
+
+        B() {
+
+        }
+
+        B(double a) {
+
+            this.a = a;
+
+        }
+
+        B(double a, double b) {
+
+            this.a = a;
+            this.b = b;
+        }
+
+        public double getA() {
+            return a;
+        }
+
+        public void setA(double a) {
+            this.a = a;
+        }
+
+        public double getB() {
+            return b;
+        }
+
+        public void setB(double b) {
+            this.b = b;
+        }
+    }
+

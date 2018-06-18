@@ -14,13 +14,74 @@ Keep all other members of the Stack class private.
 
 class Stack{
 
+    private char[] stack;
+    private int push;
+    private int pop;
+
+    Stack(int size){
+
+        stack = new char[size];
+
+        push =0;
+        pop = 0;
+
+    }
+
     public static void main(String[] args) {
 
+        Stack stacks = new Stack(10);
+
+        System.out.println("pushing");
+
+        for (char i = 'a'; i < 'p'; i++) {
+
+            stacks.PushStack(i);
+            System.out.println(i);
+        }
+
+        System.out.println("Popping");
+
+                   for (char a ='a'; a < 'p'; a ++) {
 
 
+                           System.out.println(stacks.StackPop(a));
+
+                   }
+
+        }
+
+
+
+    void PushStack(char a) {
+
+        if (push == stack.length) {
+
+            System.out.println("Stack is full");
+
+            return;
+        }
+        // -- going from the left to the right
+        else if (push < stack.length) {
+            stack[push++] = a;
+        }
 
 
     }
 
+    char StackPop(char a){
 
+        if (pop == stack.length){
+
+            System.out.println("No more plates");
+
+
+        }else if (pop == push){
+
+            stack[push++] = a;
+
+        }
+
+        return a;
+
+    }
 }
