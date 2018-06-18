@@ -1,22 +1,56 @@
 1) What is Java inheritance?
 
+//a parent child relationship between classes
+//when a class extends another class
+
 2) How does inheritance work?
+
+//A class becomes a subclass of another class
+//by using "extends"
+
+//Ex) class Pencil extends class Utensil {}
+
+// now the Pencil class is the subclass (the child class) of class Utensil
 
 3) What are some advantages that inheritance provides?
 
+// Reusability is an advantage of inheritance
+
 4) What does the "super" keyword do?
+
+//calls the parent class
 
 5) In what order are constructors called when there are multiple subclasses?
 
+//super class constructers are called first
+
 6) What does it mean when a method is overridden?
+
+//The subclass takes the same exact method and parameter from the super class to change the brehavior of its body
 
 7) How do overridden methods support polymorphism?
 
+//poly means multi morphism means behavior.
+//^^ Changing the behavior
+//Override changes the behavior of the method
+
 8) What is the difference between an overloaded method and an overridden method?
 
-9) What is dynamic method dispatch?
+//Overloading is copying the same method signature within the same class but has different parameters
+
+//ovveriding is a subclass coping the same exact method signature and the parameter from the super class
+//(usually overridden to change the behavior of body)
+
+9) What is dynamic method dispatch? **
 
 10) What does the "final" keyword do?
 
-11) Are classes in Java are a subclass of what super class?
+//final sets the method or the variable
+
+// you can not change the method or variable that is a final
+
+ //Example you want to final PI, because final does not change
+
+11) Are classes in Java are a subclass of what super class? **
+
 
