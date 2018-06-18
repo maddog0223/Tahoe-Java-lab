@@ -29,3 +29,27 @@ class MethStr {
     }
 
 }
+
+class Ex2 {
+    public static void main(String[] args) {
+        Ex2 obj = new Ex2();
+
+        obj.sb2("This is the first sentence");
+        obj.sb2("This is the second");
+        obj.sb2("What uppp");
+
+    }
+
+
+    public void sb2(String... sentence) {
+
+        System.out.println();
+
+        for (String a : sentence) {
+
+
+            System.out.println(a);
+        }
+
+    }
+}
