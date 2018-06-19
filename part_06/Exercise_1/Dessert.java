@@ -5,6 +5,15 @@ class Dessert {
     private int sugarpercup;
     private int caloriespercup;
 
+    Dessert(int sugarpercup, int caloriespercup){
+
+        this.sugarpercup = sugarpercup;
+        this.caloriespercup = caloriespercup;
+    }
+
+    Dessert(){}
+
+
     public int getSugarpercup() {
         return sugarpercup;
     }
@@ -20,6 +29,19 @@ class Dessert {
     public void setCaloriespercup(int caloriespercup) {
         this.caloriespercup = caloriespercup;
     }
+
+    public double cost(double a){
+
+        return  a;
+    }
+
+    void Outcome(){
+
+        System.out.println("This is Dessert");
+    }
+
+
+
 
 
 
