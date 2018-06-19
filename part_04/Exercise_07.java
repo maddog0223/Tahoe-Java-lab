@@ -23,7 +23,7 @@ class Stack{
         stack = new char[size];
 
         push =0;
-        pop = 0;
+        pop = stack.length;
 
     }
 
@@ -33,23 +33,21 @@ class Stack{
 
         System.out.println("pushing");
 
-        for (char i = 'a'; i < 'p'; i++) {
+        for (char i = 'a'; i < 'e'; i++) {
 
             stacks.PushStack(i);
             System.out.println(i);
+
+
+            for (char a = i; a < stacks.stack.length; a--) {
+
+
+                System.out.println(stacks.StackPop(a));
+
+            }
         }
 
-        System.out.println("Popping");
-
-                   for (char a ='a'; a < 'p'; a ++) {
-
-
-                           System.out.println(stacks.StackPop(a));
-
-                   }
-
-        }
-
+    }
 
 
     void PushStack(char a) {
@@ -60,28 +58,22 @@ class Stack{
 
             return;
         }
-        // -- going from the left to the right
-        else if (push < stack.length) {
+
             stack[push++] = a;
-        }
 
 
     }
 
-    char StackPop(char a){
+    char StackPop(char p){
 
-        if (pop == stack.length){
+        if (pop == 0){
 
-            System.out.println("No more plates");
-
-
-        }else if (pop == push){
-
-            stack[push++] = a;
-
+            System.out.println("It's empty");
         }
 
-        return a;
+        stack[pop--] = p;
+
+        return p;
 
     }
 }

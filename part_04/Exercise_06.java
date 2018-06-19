@@ -19,7 +19,7 @@ class Queue {
     private int putloc, getloc;
 
 
-    public Queue(int size) {
+    Queue(int size) {
 
         queen = new int[size];
 

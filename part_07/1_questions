@@ -1,12 +1,14 @@
 1) What is a Java package?
 //A directory for classes
 
-2) What is the CLASSPATH variable all about? ***
+2) What is the CLASSPATH variable all about?
+// Shows the path to your packages an classes through command line
 
-3) What does the package structure mirror? ***
+3) What does the package structure mirror?
+//file name
+//.class
 
 4 How do packages affect access to Java classes?
-
 //protects the classes with the package (excluding the subclasses of the packages)
 
 5) What is an interface?

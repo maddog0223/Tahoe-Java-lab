@@ -2,60 +2,62 @@ Answer the following:
 
 1) What are the access control modifiers (acm) provided in Java?
 
-private, protected, public, and default
+//private, protected, public, and default
 
 2) Briefly explain each acm and how they differentiate from each other?
 
-private = cam only be accesed to it's own class or its superclass
+//private = cam only be accesed to it's own class or its superclass
 
-public = can be accessed from all classes
+//public = can be accessed from all classes
 
-protected - can be accessed from the classes from the same package and the subclasses of its class.
+//protected - can be accessed from the classes from the same package and the subclasses of its class.
 
-default = cam only be accessed from the classes in the same package
+//default = cam only be accessed from the classes in the same package
 
 3) Why do we use acm's?
 
-for security reasons
-some classes are meant to be kept secured
+//for security reasons
+//some classes are meant to be kept secured
 
 4) What is the risk of not using acm's?
 
-Something important can be altered
+//Something important can be altered
 
-examples PIs number can never be changed but if public, there is a possibility that the number of pi can be altered
+//examples PIs number can never be changed but if public, there is a possibility that the number of pi can be altered
 ^^ That's not secured
-That means your bank account number can be changed as well without much protection
+//That means your bank account number can be changed as well without much protection
 
 5) Write a method signature that receives an object of type "Car" as a parameter.
 
-public static void Vroom(Car car){}
+//public static void Vroom(Car car){}
 
 
 6) Write a method signature that returns an object of type "Car".
 
-public static Car Vroom(Car car){}
+//public static Car Vroom(Car car){}
 
 7) What is a very important consideration to keep in mind when passing objects (hint: by reference) from one
 method to another?
 
-create an object
+//create an object
 
 8) What is method overloading?
 
-same method signature but different parameters
+//same method signature but different parameters
 
 9) Why is method overloading useful? (Hint: as compared to the implementation in the C language.)
 
-Makes Method callings more flexible
+//Makes Method callings more flexible
 
 10) How do you overload a method? What signifies that a method is being overloaded?
 
-public static int Vroom(int car, int truck){}
+//public static int Vroom(int car, int truck){}
 
-public static int Vroom(Car car, ){}
+//public static int Vroom(Car car){}
 
 11) Below, by writing just the method signature, demonstrate overloading a method 3 times.
+
+//
 
 12) How do you overload a constructor? What signifies that a constructor is being overloaded?
 
@@ -64,6 +66,8 @@ public static int Vroom(Car car, ){}
 14) Below, by writing just the constructor signature, demonstrate overloading a constructor 3 times.
 
 15) What is recursion?
+
+//A method that calls itself
 
 16) What important considerations must you keep in mind when using recursion?
 

@@ -43,6 +43,10 @@
 
 9) What is dynamic method dispatch? **
 
+// Superclass name = new subclass;
+
+^^ This goes into the subclass.
+
 10) What does the "final" keyword do?
 
 //final sets the method or the variable
