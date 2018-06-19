@@ -55,6 +55,8 @@
 
  //Example you want to final PI, because final does not change
 
-11) Are classes in Java are a subclass of what super class? **
+11) Are classes in Java are a subclass of what super class?
+
+//object class
 
 
