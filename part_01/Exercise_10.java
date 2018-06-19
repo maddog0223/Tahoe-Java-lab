@@ -8,6 +8,7 @@ package part_01;
  *
  */
 
+
 public class Exercise_10 {
     public static void main(String[] args) {
 
@@ -17,3 +18,4 @@ public class Exercise_10 {
         System.out.println(" the average mile per hour is " + av2 + "miles per hour");
     }
 }
+

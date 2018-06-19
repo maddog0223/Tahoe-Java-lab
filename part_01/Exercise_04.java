@@ -10,11 +10,12 @@ package part_01;
  *      4   8   16
  *
  */
-public class Exercise_04 {
+
 
   public static void main(String[] args) {
 
    System.out.println(" *      a   a*2 a*4\n" + " *      1   2   4\n" + " *      ....\n" + " *      4   8   16");
   }
 }
+
 
