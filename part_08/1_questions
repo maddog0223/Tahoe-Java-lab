@@ -1,26 +1,114 @@
 1) Describe the exception hierarchy.
 
+// The exception hierarchy all starts from the class Throwable
+//All exception and errors are the subclasses of Throwable
+//runtime exception and IO exception extends class exception
+
+
+//arratoutofboundexception extends indexputofboundexeption and indexoutboundofexeption extends runtime exception ...etc
+//filenotfoundexception and socketexception extends IOexception
+
 2) What is a try/catch statement?
+
+//helps detect and and catches exceptions
 
 3) Why do we use try/catch statements?
 
+//to stop from terminating thr program
+
 4) Write a full example of a try/catch/finally statement that catches two distinct exceptions
+
+try {
+
+int c = 4/0;
+} catch(DivideByZeroException ze){
+
+System.out.println("Can't divide by zero");
+}finally{
+
+//Theclosingblock
+
+}
 
 5) What does it mean to "throw" an exception? How does it work?
 
+//to throw the exception from a method or from a block of code
+
 6) What happens if your application encounters an exception and you don't catch it or throw it?
 
+// Hits the JVM and terminates the program
+//
 7) When catching exception in an inheritance hierarchy, should you catch the subclass exception or the
 superclass exception first? Why?
 
+//The subclass exception should be caught first. The subclass exception is included in the superclass exception.
+//If the superclass is caught first, you won't know the specific exception, only the general.
 8) Write a nested try/catch statement.
+
+try{
+        statement1;
+        statement2;
+       //exception
+    try{
+            statement3;
+            statement4;
+
+       }catch(SomeKindofException exceptionname1){
+      //exception message
+    }
+   }catch(AnotherKindofexceptionmaybethesuperclassException exceptionname2){
+
+        //exception message
+   }
 
 9) What does it mean to rethrow an exception?
 
+//throwing the exception to the outer catch
+//The cause might be that it might of missed cathing it or it might be different exception
+
 10) What are the 7 methods that come with the Throwable class?
+
+// 1    Throwable fillInStackTrace()
+This method fills in the execution stack trace.
+
+//2    Throwable getCause()
+This method returns the cause of this throwable or null if the cause is nonexistent or unknown.
+
+//3    String getLocalizedMessage()
+This method creates a localized description of this throwable.
+
+//4    String getMessage()
+This method returns the detail message string of this throwable.
+
+//5    StackTraceElement[] getStackTrace()
+This method provides programmatic access to the stack trace information printed by printStackTrace().
+
+/6    Throwable initCause(Throwable cause)
+This method initializes the cause of this throwable to the specified value.
+
+//7    void printStackTrace()
+This method prints this throwable and its backtrace to the standard error stream.
+
+//8    void printStackTrace(PrintStream s)
+This method prints this throwable and its backtrace to the specified print stream.
+
+//9    void printStackTrace(PrintWriter s)
+This method prints this throwable and its backtrace to the specified print writer.
+
+//10    void setStackTrace(StackTraceElement[] stackTrace)
+This method sets the stack trace elements that will be returned by getStackTrace()
+and printed by printStackTrace() and related methods.
 
 11) What does the "finally" block do?
 
+//A block that is executed whether or not the exception was handled or not
+
 12) When is the finally block executed? Will it ever not be executed?
+//Used after the catch block
+//used for closing connection,stream,..etc.
+//To exit the try block
+//May not run if the try catch is killed or interrupted
+
 
 13) What are the three recently added features to Java exceptions?
+//try-with-resources, multi-catch, and final rethrow
