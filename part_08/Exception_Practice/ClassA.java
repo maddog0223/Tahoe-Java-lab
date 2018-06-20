@@ -6,7 +6,7 @@ public class ClassA  {
 
     public static void main(String[] args) throws ArithmeticException {
 
-        ClassA classa = new ClassA();
+
         ClassB classb = new ClassB();
 
         Scanner scan = new Scanner(System.in);

@@ -8,8 +8,7 @@ public class ClassB {
 
        if (num1==0||num2==0){
 
-           throw new ArithmeticException("Can't divide zero!!");
-
+           throw new ArithmeticException("Can't divide by zero!!");
 
        }
 
