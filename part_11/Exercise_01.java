@@ -16,6 +16,18 @@ Complete the code so that it prints the following lines:
 
 public class Exercise_01 <T> {
 
+
+    public <T> void printArray(T[] vals){
+
+     for (T name: vals){
+
+         System.out.println(name);
+
+     }
+
+    }
+
+
 }
 
 

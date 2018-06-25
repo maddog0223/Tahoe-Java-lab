@@ -3,6 +3,8 @@ package part_04;
 
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
+import java.io.FileInputStream;
+import java.security.PublicKey;
 import java.util.Scanner;
 
 /**
@@ -12,68 +14,61 @@ the method that access the stack push() and pop(). Allow the user to specify the
 Keep all other members of the Stack class private.
  */
 
-class Stack{
+class StackFILS {
 
     private char[] stack;
-    private int push;
-    private int pop;
+    private int index;
 
-    Stack(int size){
+    StackFILS(int size) {
 
         stack = new char[size];
-
-        push =0;
-        pop = stack.length;
-
-    }
-
-    public static void main(String[] args) {
-
-        Stack stacks = new Stack(10);
-
-        System.out.println("pushing");
-
-        for (char i = 'a'; i < 'e'; i++) {
-
-            stacks.PushStack(i);
-            System.out.println(i);
-
-
-            for (char a = i; a < stacks.stack.length; a--) {
-
-
-                System.out.println(stacks.StackPop(a));
-
-            }
-        }
-
+        index = 0;
     }
 
 
-    void PushStack(char a) {
+    void PushStack(char val1) {
 
-        if (push == stack.length) {
+        if (index == stack.length) {
 
-            System.out.println("Stack is full");
+            System.out.println("stack is full");
 
             return;
         }
 
-            stack[push++] = a;
+        for (val1 = 'a'; val1 <= 'p'; val1++) {
+
+            stack[index++] = val1;
 
 
-    }
-
-    char StackPop(char p){
-
-        if (pop == 0){
-
-            System.out.println("It's empty");
         }
 
-        stack[pop--] = p;
-
-        return p;
 
     }
+
+    char StackPop(char val2) {
+        if (index == 0) {
+
+            System.out.println("Stack is Empty");
+
+        }
+
+
+        stack[index--] = val2;
+
+        return val2;
+    }
+
+    public static void main(String[] args) {
+
+        StackFILS st = new StackFILS(10);
+
+        System.out.println("Popping");
+
+        for (char pop = st.stack[9]; pop <= 'a'; pop --){
+
+            System.out.println(st.StackPop(pop));
+
+        }
+    }
 }
+
